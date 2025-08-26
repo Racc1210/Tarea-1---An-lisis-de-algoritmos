@@ -1,7 +1,11 @@
 import random
 
+def crearLista(n):
+    return random.choices(range(1, 255), k=n)
+
+
 def crearMatriz(n):
-    return [random.choices(range(1, 255), k=n) for i in range(n)]
+    return [crearLista(n) for i in range(n)]
 
 def quicksort(lista):
     if len(lista) <= 1:
@@ -67,5 +71,6 @@ def pruebas(n):
     print(matriz_mergesort)
     return 0
 
-print(pruebas(4))
+#print(pruebas(4))
+print(quicksort(crearLista(100000)))
 #print(crearMatriz(10000))
