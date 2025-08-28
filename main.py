@@ -12,7 +12,7 @@ def probar_promedio_algoritmos():
         "Quicksort": quicksort,
         "Mergesort": mergesort
     }
-    repeticiones = 100
+    repeticiones = 5
     for n in tamanos:
         print(f"\nTamaño de lista: {n}")
         for nombre, algoritmo in algoritmos.items():
@@ -63,7 +63,7 @@ def probar_busquedas_promedio():
         "Lineal": busqueda_lineal_matriz,
         "Binaria": busqueda_binaria_matriz
     }
-    repeticiones = 100
+    repeticiones = 5
     objetivo = 128
     for n in tamanos:
         print(f"\nTamaño de matriz: {n}x{n}")
