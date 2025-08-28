@@ -7,7 +7,7 @@ from Mediciones import medir_ordenamiento, medir_busqueda
 
 
 def probar_promedio_algoritmos():
-    tamanos = [10, 100, 1000, 10000]
+    tamanos = [100, 1000, 10000, 100000]
     algoritmos = {
         "Quicksort": quicksort,
         "Mergesort": mergesort
@@ -90,9 +90,14 @@ def probar_busquedas_promedio():
 
 if __name__ == "__main__":
     # Llama aquí a las funciones de prueba que desees ejecutar
-    print("Ordenamientos: \n")
+    print("Ordenamientos:")
+    print("-------------------")
+    print("prueba unica de ordenamientos:")
     probar_ordenamientos()
+    print("\nprueba promedio de ordenamientos:")
     probar_promedio_algoritmos()
-    print("Busquedas: \n")
+    print("----------------")
+    print("pruba unica de busquedas:")
     probar_busquedas()
+    print("\nprueba promedio de busquedas:")
     probar_busquedas_promedio()
